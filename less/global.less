@@ -43,6 +43,14 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+
+  @media @mobile {
+    max-width: 500px;
+    width: 80%;
+    margin: auto;
+    overflow:hidden;
+    }
+
 }
 
 .flex(@align: center, @justify: center) {
@@ -50,3 +58,4 @@ img {
   justify-content: @justify;
   align-items: @align;
 }
+
